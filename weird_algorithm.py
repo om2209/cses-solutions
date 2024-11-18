@@ -3,7 +3,7 @@ def weird_algorithm(n: int):
         print(n, end=' ')
         if n == 1:
             break
-        if n % 2 == 1:
+        elif n % 2 == 1:
             n = 3*n + 1
         else:
             n = n // 2
