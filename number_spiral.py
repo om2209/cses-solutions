@@ -1,15 +1,5 @@
 def number_spiral(y: int, x: int) -> int:
-    if y == 1:
-        if x % 2 == 1:
-            return x**2
-        else:
-            return (x-1)**2 + 1
-    elif x == 1:
-        if y % 2 == 0:
-            return y**2
-        else:
-            return (y-1)**2 + 1
-    elif x <= y:
+    if x <= y:
         if y % 2 == 0:
             return y**2 - (x - 1)
         else:
